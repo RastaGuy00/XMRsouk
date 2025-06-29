@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XMRsouk - Monero News Tripoli</title>
+  <style>
+    body {
+      background-color: #ff6600; /* Monero orange */
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; 
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      margin: 0 0 20px 0;
+      font-weight: 900;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .donate-button {
+      background-color: #4a4a4a; /* dark gray from Monero logo */
+      border: none;
+      border-radius: 8px;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      margin-bottom: 15px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .donate-button:hover {
+      background-color: #333333;
+    }
+    .xmr-address {
+      font-family: monospace;
+      background-color: #ffffff22;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      user-select: all;
+      max-width: 90vw;
+      word-wrap: break-word;
+      box-shadow: 0 0 10px #00000055 inset;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ffffffcc;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>XMRsouk</h1>
+
+  <a 
+    href="monero:<YOUR_XMR_ADDRESS>" 
+    class="donate-button" 
+    title="Donate XMR to XMRsouk"
+  >
+    Donate XMR
+  </a>
+
+  <div class="xmr-address" title="Copy your donation address">
+    <YOUR_XMR_ADDRESS>
+  </div>
+
+  <footer>
+    &copy; 2025 XMRsouk – Monero News Tripoli
+  </footer>
+</body>
+</html>
