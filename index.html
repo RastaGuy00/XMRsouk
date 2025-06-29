@@ -3,82 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>XMRsouk - Monero News Tripoli</title>
+  <title>XMRsouk - Fundraising</title>
   <style>
     body {
-      background-color: #ff6600; /* Monero orange */
+      background-color: #ff6600;
       color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; 
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
       text-align: center;
     }
     h1 {
-      font-size: 5rem;
-      margin: 0 0 20px 0;
-      font-weight: 900;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      font-size: 4rem;
+      margin-bottom: 20px;
     }
     .donate-button {
-      background-color: #4a4a4a; /* dark gray from Monero logo */
+      background-color: #4a4a4a;
       border: none;
       border-radius: 8px;
       padding: 15px 30px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: white;
       cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
-      margin-bottom: 15px;
+      margin: 20px 0;
       text-decoration: none;
       display: inline-block;
-    }
-    .donate-button:hover {
-      background-color: #333333;
     }
     .xmr-address {
       font-family: monospace;
       background-color: #ffffff22;
-      padding: 12px 20px;
+      padding: 10px;
       border-radius: 8px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       user-select: all;
-      max-width: 90vw;
       word-wrap: break-word;
-      box-shadow: 0 0 10px #00000055 inset;
+      margin-bottom: 30px;
+    }
+    .goal-section {
+      background: #fff2;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 600px;
+    }
+    .progress-bar-bg {
+      background-color: #ddd;
+      height: 30px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #ffffff;
+      width: 35%; /* Change this % manually */
+      text-align: right;
+      padding-right: 10px;
+      color: #000;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .contributors {
+      text-align: left;
+      margin-top: 30px;
+      background-color: #ffffff11;
+      padding: 15px;
+      border-radius: 8px;
     }
     footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9rem;
+      margin-top: 40px;
+      font-size: 0.9em;
       color: #ffffffcc;
-      font-weight: 600;
     }
   </style>
 </head>
 <body>
+
   <h1>XMRsouk</h1>
 
   <a 
     href="monero:<YOUR_XMR_ADDRESS>" 
     class="donate-button" 
-    title="Donate XMR to XMRsouk"
+    title="Donate Monero"
   >
     Donate XMR
   </a>
 
-  <div class="xmr-address" title="Copy your donation address">
+  <div class="xmr-address">
     <YOUR_XMR_ADDRESS>
+  </div>
+
+  <div class="goal-section">
+    <h2>Fundraising Goal: 10 XMR</h2>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" style="width: 3.5%;">0.35 XMR</div>
+    </div>
+    <p><strong>Raised:</strong> 0.35 XMR &nbsp; | &nbsp; <strong>Remaining:</strong> 9.65 XMR</p>
+  </div>
+
+  <div class="contributors">
+    <h3>Contributors:</h3>
+    <ul>
+      <li><strong>anon_1:</strong> 0.1 XMR</li>
+      <li><strong>monero_friend:</strong> 0.25 XMR</li>
+    </ul>
   </div>
 
   <footer>
     &copy; 2025 XMRsouk – Monero News Tripoli
   </footer>
+
 </body>
 </html>
